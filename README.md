@@ -1,20 +1,28 @@
 # **NyayMitra: AI-Powered Legal Assistant**  
 
-## **Overview**  
-NyayMitra is an AI-driven legal assistant designed to help users navigate Indian law. This project integrates the **Indian Kanoon API** for legal case searches and an **AI-powered chatbot** for legal discussions. Additionally, users can upload documents to receive context-aware responses based on their content.  
+## AI/ML & Data Analytics Team - Group 1
 
-## **Features**  
-- **Indian Kanoon Search:** Retrieve relevant case laws and legal documents.  
-- **AI Chatbot:** Engage in legal discussions powered by an AI model specialized in Indian law.  
-- **Custom Document Chat:** Upload legal documents (PDF/TXT) and ask questions based on their content.  
+## **Team Members**  
+- **Vaibhav Manihar**
+- **Mainik Sil**
+- **Akshat Goel**
 
-## **Technical Details**  
-Initially, we explored implementing our own models using frameworks like Hugging Face. However, after evaluating performance, accuracy, and scalability, we strategically integrated APIs. This allows for:  
+## **Project Description**  
+NyayMitra is an AI-driven legal assistant designed to help users navigate Indian law efficiently. It integrates:  
+- **Indian Kanoon API** for retrieving relevant case laws.  
+- **AI-powered chatbot** for legal discussions, leveraging state-of-the-art language models.  
+- **Custom Document Processing**, allowing users to upload legal documents and get context-aware responses.  
+
+Initially, we explored implementing our own models using frameworks like Hugging Face and trained them on a curated legal dataset. This dataset, which was used in our previous versions, has been included in the repository for reference. However, after evaluating performance, accuracy, and scalability, we strategically transitioned to an API-based approach. This allows for:  
+
 - **Reliable and up-to-date legal information** via Indian Kanoon.  
 - **Scalable AI interactions** without the need for large-scale computational resources.  
 - **Simplified deployment and accessibility** for a wider audience.  
 
-The current implementation ensures efficiency while leaving room for future in-house model development.  
+The current implementation prioritizes efficiency while keeping room for future in-house model development.  
+
+## **Architectural Diagram**  
+![NyayMitra Architecture](https://i.imgur.com/OqVbJUD.png)  
 
 ## **Installation**  
 To set up the project locally:  
@@ -28,13 +36,20 @@ To set up the project locally:
    ```bash
    pip install -r requirements.txt
    ```  
-3. Replace `YOUR_INDIAN_KANOON_API_KEY` and `YOUR_GPT_API_KEY` in `app.py` with your actual API keys.  
+3. **Replace API keys**: Open `app.py` and replace:  
+   - `YOUR_INDIAN_KANOON_API_KEY`  
+   - `YOUR_GPT_API_KEY`  
 
 ## **Usage**  
 Run the application with:  
 ```bash
 streamlit run app.py
 ```  
+
+## **References**  
+- **Indian Kanoon API:** [https://www.indiankanoon.org/](https://www.indiankanoon.org/)  
+- **OpenAI API Documentation:** [https://platform.openai.com/docs/](https://platform.openai.com/docs/)  
+- **Streamlit Documentation:** [https://docs.streamlit.io/](https://docs.streamlit.io/)  
 
 ## **Disclaimer**  
 NyayMitra provides AI-generated responses based on available legal information. It does not offer legal representation or definitive legal advice. Users should consult a professional lawyer for legal matters.  
