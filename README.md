@@ -4,7 +4,7 @@
 
 ## **Team Members**  
 - **Vaibhav Manihar**
-- **Mainik Sil**
+- **Mainak Sil**
 - **Akshat Goel**
 
 ## **Project Description**  
